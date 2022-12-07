@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+spring:
+  datasource: # 数据库配置
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: webtest
+    password: NTPL8ta3j3BsNMNP
+    url: jdbc:mysql://a2dc.cn:3306/webtest
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  type-aliases-package: com.example.demo.pojo #
+  mapper-locations: classpath:/mybatis/*xml # 指定Mybatis的xml文件
