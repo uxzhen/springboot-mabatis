@@ -10,5 +10,15 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 mybatis:
-  type-aliases-package: com.example.demo.pojo #
+  type-aliases-package: com.example.demo.pojo # 指定Mybatis的实体目录
   mapper-locations: classpath:/mybatis/*xml # 指定Mybatis的xml文件
+
+logging:
+  file:
+    name: log/log.log
+
+  level:
+    root: info
+    com:
+      example:
+        demo: debug
