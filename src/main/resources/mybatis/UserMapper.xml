@@ -16,4 +16,8 @@
             </if>
         </where>
     </select>
+
+    <delete id="deleteUserById" parameterType="int">
+        delete from webtest.user where id=#{id}
+    </delete>
 </mapper>

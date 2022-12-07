@@ -22,7 +22,7 @@
         <td th:text="${user.pwd}">Engineer</td>
         <td>
             <a th:href="@{/edit/{id}(id=${user.id})}" class="ui button mini pink">编辑</a>
-            <a th:href="@{/delete/{id}(id=${user.id})}" class="ui button mini teal">删除</a>
+            <a th:href="@{/delUserById/{id}(id=${user.id})}" class="ui button mini teal">删除</a>
         </td>
     </tr>
     </tbody>

@@ -13,4 +13,6 @@ public interface UserService {
 
     //    根据用户名来查询用户，并分页展示
     public PageInfo<User> listUserByName(UserQuery userQuery);
+
+    public String delUserById(int id);
 }

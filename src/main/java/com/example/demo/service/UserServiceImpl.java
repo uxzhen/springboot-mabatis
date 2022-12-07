@@ -26,4 +26,10 @@ public class UserServiceImpl implements UserService {
         PageHelper.startPage(userQuery.getPageNum(),userQuery.getPageSize());
         return new PageInfo<User>(userDao.listUserByName(userQuery));
     }
+
+    @Override
+    public String delUserById(int id) {
+        userDao.deleteUserById(id);
+        return "'删除成功'";
+    }
 }
