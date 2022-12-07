@@ -45,12 +45,22 @@ public class UserContoroller {
 
     // /delUserById/1
     @GetMapping("/delUserById/{id}")
-    //@ResponseBody
+    @ResponseBody
     public String delUserById(@PathVariable("id") String id){
          userService.delUserById(Integer.parseInt(id));
         //System.out.println(listUser);
         return "删除成功";
     }
 
-
+    // 新增
+    @GetMapping("/add/{name}/{pwd}")
+    @ResponseBody
+    public String addUser(@PathVariable("name") String name,@PathVariable("pwd") String pwd){
+        User user = new User();
+        user.setName(name);
+        user.setPwd(pwd);
+        System.out.println(user);
+        userService.addUser(user);
+        return "新建成功";
+    }
 }

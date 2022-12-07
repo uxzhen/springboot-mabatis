@@ -18,4 +18,6 @@ public interface UserDao {
     public List<User> listUserByName(UserQuery userQuery);
 
     public void deleteUserById(int id);
+
+    public void addUser(User user);
 }

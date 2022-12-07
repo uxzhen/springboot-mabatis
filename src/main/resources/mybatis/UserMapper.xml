@@ -20,4 +20,8 @@
     <delete id="deleteUserById" parameterType="int">
         delete from webtest.user where id=#{id}
     </delete>
+
+    <insert id="addUser" parameterType="com.example.demo.pojo.User">
+        insert into webtest.user(name, pwd) values (#{name},#{pwd})
+    </insert>
 </mapper>

@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class UserQuery {
     private Integer pageNum = 1; // 起始页
-    private Integer pageSize = 2; // 每页显示数量
+    private Integer pageSize = 100; // 每页显示数量
     private String name;
 
 }

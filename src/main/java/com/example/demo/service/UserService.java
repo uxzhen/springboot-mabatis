@@ -15,4 +15,7 @@ public interface UserService {
     public PageInfo<User> listUserByName(UserQuery userQuery);
 
     public String delUserById(int id);
+
+    public String addUser(User user);
+
 }

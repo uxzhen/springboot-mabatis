@@ -32,4 +32,10 @@ public class UserServiceImpl implements UserService {
         userDao.deleteUserById(id);
         return "'删除成功'";
     }
+
+    @Override
+    public String addUser(User user) {
+        userDao.addUser(user);
+        return "创建成功";
+    }
 }
