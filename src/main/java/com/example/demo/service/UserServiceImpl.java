@@ -38,4 +38,9 @@ public class UserServiceImpl implements UserService {
         userDao.addUser(user);
         return "创建成功";
     }
+
+    @Override
+    public void upUser(User user) {
+        userDao.upUser(user);
+    }
 }

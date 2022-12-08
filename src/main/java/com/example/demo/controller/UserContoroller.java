@@ -63,4 +63,16 @@ public class UserContoroller {
         userService.addUser(user);
         return "新建成功";
     }
+
+//    更新
+    @GetMapping("/up")
+    @ResponseBody
+    public String up(){
+        User user = new User();
+        user.setName("123123");
+        user.setPwd("222");
+        user.setId(10);
+        userService.upUser(user);
+        return "更新成功";
+    }
 }

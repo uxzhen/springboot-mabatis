@@ -17,5 +17,6 @@ public interface UserService {
     public String delUserById(int id);
 
     public String addUser(User user);
+    public void upUser(User user);
 
 }

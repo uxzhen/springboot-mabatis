@@ -20,4 +20,5 @@ public interface UserDao {
     public void deleteUserById(int id);
 
     public void addUser(User user);
+    public void upUser(User user);
 }

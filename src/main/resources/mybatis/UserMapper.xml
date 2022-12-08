@@ -24,4 +24,10 @@
     <insert id="addUser" parameterType="com.example.demo.pojo.User">
         insert into webtest.user(name, pwd) values (#{name},#{pwd})
     </insert>
+
+    <update id="upUser" parameterType="com.example.demo.pojo.User">
+            update webtest.user
+            set name = #{name},pwd = #{pwd}
+            where id = #{id}
+    </update>
 </mapper>
